@@ -1,0 +1,159 @@
+.main_allportfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    padding-top: 120px;
+    @media(max-width: 1040px) {
+      padding-top: 20px;
+        }
+    .left_port {
+        .port {
+            width: 100%;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 12px;
+            @media(max-width: 1600px) {
+                margin-bottom: 7px;
+                }
+        }
+
+        .port_title {
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1.3;
+            font-family: var(--font-inter);
+            color: var(--dark-color);
+            margin-bottom: 30px;
+            @media(max-width: 1600px) {
+                font-size: 35px;
+                margin-bottom: 20px;
+                }
+            @media(max-width: 1040px) {
+                font-size: 30px;
+                }
+        }
+    }
+
+    .container {
+ 
+
+
+        .main_allportcard {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+            @media(max-width: 1282px) {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                }
+            // @media(max-width: 1040px) {
+            //     display: grid;
+            //     grid-template-columns: repeat(3,1fr);
+            //     }
+            @media(max-width: 850px) {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                }
+            @media(max-width: 550px) {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                }
+            .portfolio_card {
+                width: 363.33px;
+                height: 548.14px;
+                @media(max-width: 1600px) {
+                    width: 294px;
+                    height: 384px;
+                  }
+                  @media(max-width: 1282px) {
+                    width: 100%;
+                    }
+                  @media(max-width: 850px) {
+                    height: 360px;
+                    }
+                .porfolio_img {
+                    height: 445.14px;
+                    width:100%;
+                    transition: 0.3s ease-in-out;
+                    overflow: hidden;
+                    @media(max-width: 1600px) {
+                        
+                        height: 282px;
+                        }
+                    &:hover {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: 0.3s ease-in-out;
+                    }
+                }
+
+                .sub_title {
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    @media(max-width: 1600px) {
+                       margin-top: 20;
+                        margin-bottom: 7px;
+                        }
+                    @media(max-width: 1040px) {
+                     margin-top: 15px;
+                     margin-bottom: 5px;
+                        }
+                    &:hover {
+                        color: var(--yellow-color);
+                    }
+                }
+
+                .portcard_title {
+                    font-weight: 600;
+                    font-size: 24px;
+                    color: #130f49;
+                    line-height: 1.3;
+                    font-family: var(--font-inter);
+                    position: relative;
+                    width: fit-content;
+                    cursor: pointer;
+                    @media(max-width: 1600px) {
+                        font-size: 19px;
+                        }
+                    @media(max-width: 1040px) {
+                        font-size: 16px;
+                        }
+                    &::after {
+                        content: "";
+                        width: 0;
+                        height: 1.5px;
+                        position: absolute;
+                        left: auto;
+                        right: 0;
+                        bottom: 0;
+                        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+                        background: currentColor;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                        left: 0;
+                        right: auto;
+                    }
+                }
+            }
+        }
+
+
+
+
+
+    }
+}
