@@ -1,0 +1,83 @@
+.blogread_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+
+  .container {
+    .blog_start {
+      padding-top: 120px;
+      padding-bottom: 50px;
+      position: relative;
+      @media(max-width: 1040px) {
+      padding-top: 20px;
+      }
+      .blog_about {
+        // position: absolute;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        @media(max-width: 1040px) {
+          flex-direction: column;
+          gap: 0.5rem;
+          align-items: flex-start;
+        }
+        .date {
+          font-size: 14px;
+          color: var(--dark-color);
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          @media(max-width: 1040px) {
+            font-size:10px;
+          }
+        }
+
+      }
+
+
+      .blog_title {
+        font-family: "Poppins", sans-serif;
+        font-size: 34px;
+        font-weight: 700;
+        line-height: 1.3;
+        color: var(--dark-color);
+
+        @media(max-width: 1600px) {
+          font-size: 29px;
+        }
+
+        @media(max-width: 1040px) {
+          font-size: 22px;
+          padding-top: 10px;
+        }
+      }
+
+      .blog_img {
+        width: 100%;
+        height: 500px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+
+        @media(max-width: 1040px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

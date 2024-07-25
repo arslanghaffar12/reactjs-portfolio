@@ -1,0 +1,139 @@
+.main_everything {
+    background-color: #f3f9ff;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+    @media(max-width:1040px) {
+        padding-top: 40px;
+    }
+
+    .container {
+
+        padding: 100px 0 70px;
+
+        .exper {
+            width: 100%;
+            font-weight: 500;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 12px;
+
+            @media(max-width:1600px) {
+                margin-bottom: 8px;
+            }
+        }
+
+        .exper_title {
+            font-size: 40px;
+            font-weight: 800;
+            margin-bottom: 40px;
+            line-height: 1.3;
+            font-family: var(--font-inter);
+            color: var(--dark-color);
+
+            @media(max-width:1600px) {
+                font-size: 35px;
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: 1040px) {
+                font-size: 30px;
+            }
+        }
+
+        .experCard_main {
+            // display: flex;
+            // flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: flex-start;
+            align-items: center;
+
+            @media(max-width:770px) {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .expercard {
+                width: 100%;
+                // max-width: 590px;
+                // min-height: 266px;
+                position: relative;
+                background-color: #fff;
+                border: 1px solid #f9fafc;
+                border-radius: 4px;
+                box-shadow: 30px 40px 80px #e4edf5;
+                padding: 45px 70px;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -ms-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                transition: all .3s ease;
+
+                @media(max-width:1600px) {
+                    padding: 40px;
+                }
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                .short {
+                    width: 100%;
+                    float: left;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+                    @media (max-width: 768px) {
+                        font-size: 15px;
+                    }
+                    .job {
+
+                        .yellowColor {
+                            color: #FF972D;
+                            font-weight: 500;
+                            display: inline-block;
+                            margin-bottom: 4px;
+                        }
+
+                        h3 {
+                            font-size: 20px;
+                            font-weight: 700;
+                            line-height: 1.3;
+                            font-family: var(--font-inter);
+                            color: var(--dark-color);
+
+                            @media (max-width: 768px) {
+                                font-size: 15px;
+                            }
+                        }
+
+                    }
+
+                    .place {
+                        font-weight: 500;
+                        font-family: var(--font-inter);
+                    }
+
+                }
+
+                .text {
+                    p {
+                        opacity: .7;
+                    }
+
+                }
+
+
+
+            }
+
+        }
+
+    }
+
+}
